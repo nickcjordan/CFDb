@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module models</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>models</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/Users/MBA11/Dropbox/School/UT/Summer%202015/CS373/final_project/punt_repo/models.py">/Users/MBA11/Dropbox/School/UT/Summer 2015/CS373/final_project/punt_repo/models.py</a></font></td></tr></table>
+    <p><tt>#&nbsp;-----------<br>
+#&nbsp;imports<br>
+#&nbsp;-----------</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="json.html">json</a><br>
+</td><td width="25%" valign=top><a href="os.html">os</a><br>
+</td><td width="25%" valign=top><a href="requests.html">requests</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-about"><strong>about</strong></a>()</dt><dd><tt>:return:&nbsp;about&nbsp;page</tt></dd></dl>
+ <dl><dt><a name="-api2k15"><strong>api2k15</strong></a>()</dt><dd><tt>:&nbsp;return:&nbsp;renders&nbsp;the&nbsp;page&nbsp;that&nbsp;we&nbsp;use&nbsp;the&nbsp;other&nbsp;project's&nbsp;API</tt></dd></dl>
+ <dl><dt><a name="-conf_table"><strong>conf_table</strong></a>()</dt><dd><tt>:return:&nbsp;Conference&nbsp;table&nbsp;page</tt></dd></dl>
+ <dl><dt><a name="-conf_template"><strong>conf_template</strong></a>(c_name)</dt><dd><tt>:param&nbsp;c_name:&nbsp;the&nbsp;conference's&nbsp;name<br>
+:return:&nbsp;the&nbsp;conference&nbsp;profile&nbsp;page&nbsp;populated&nbsp;with&nbsp;content&nbsp;specific&nbsp;for&nbsp;that&nbsp;conference</tt></dd></dl>
+ <dl><dt><a name="-copaDB"><strong>copaDB</strong></a>()</dt><dd><tt>:&nbsp;return:&nbsp;renders&nbsp;the&nbsp;page&nbsp;that&nbsp;we&nbsp;use&nbsp;for&nbsp;the&nbsp;search&nbsp;results</tt></dd></dl>
+ <dl><dt><a name="-get_conf"><strong>get_conf</strong></a>(conf_name)</dt><dd><tt>GET&nbsp;method<br>
+takes&nbsp;in&nbsp;a&nbsp;conference's&nbsp;nickname&nbsp;as&nbsp;an&nbsp;argument&nbsp;from&nbsp;an&nbsp;http&nbsp;URL<br>
+and&nbsp;returns&nbsp;json&nbsp;object&nbsp;of&nbsp;the&nbsp;conference's&nbsp;attributes<br>
+to&nbsp;retrieve&nbsp;info&nbsp;for&nbsp;all&nbsp;conferences&nbsp;use&nbsp;'conf'&nbsp;as&nbsp;input</tt></dd></dl>
+ <dl><dt><a name="-get_players"><strong>get_players</strong></a>(player_name)</dt><dd><tt>GET&nbsp;method<br>
+takes&nbsp;in&nbsp;a&nbsp;player's&nbsp;name&nbsp;as&nbsp;an&nbsp;argument&nbsp;from&nbsp;an&nbsp;http&nbsp;URL<br>
+and&nbsp;returns&nbsp;data&nbsp;object&nbsp;of&nbsp;the&nbsp;players&nbsp;attributes<br>
+to&nbsp;retrieve&nbsp;info&nbsp;for&nbsp;all&nbsp;players&nbsp;use&nbsp;'players'&nbsp;as&nbsp;input</tt></dd></dl>
+ <dl><dt><a name="-get_teams"><strong>get_teams</strong></a>(team_name)</dt><dd><tt>GET&nbsp;method<br>
+takes&nbsp;in&nbsp;a&nbsp;team's&nbsp;name&nbsp;as&nbsp;an&nbsp;argument&nbsp;from&nbsp;an&nbsp;http&nbsp;URL<br>
+and&nbsp;returns&nbsp;json&nbsp;object&nbsp;of&nbsp;the&nbsp;team's&nbsp;attributes<br>
+to&nbsp;retrieve&nbsp;info&nbsp;for&nbsp;all&nbsp;teams&nbsp;use&nbsp;'teams'&nbsp;as&nbsp;input</tt></dd></dl>
+ <dl><dt><a name="-index"><strong>index</strong></a>()</dt><dd><tt>:return:splash&nbsp;page</tt></dd></dl>
+ <dl><dt><a name="-ncaa"><strong>ncaa</strong></a>()</dt><dd><tt>:return:&nbsp;NCAA&nbsp;FBS&nbsp;page</tt></dd></dl>
+ <dl><dt><a name="-player_table"><strong>player_table</strong></a>()</dt><dd><tt>:return:&nbsp;Player&nbsp;table&nbsp;page</tt></dd></dl>
+ <dl><dt><a name="-player_template"><strong>player_template</strong></a>(p_id)</dt><dd><tt>:param&nbsp;p_name:&nbsp;the&nbsp;player's&nbsp;name<br>
+:return:&nbsp;the&nbsp;player&nbsp;profile&nbsp;page&nbsp;populated&nbsp;with&nbsp;content&nbsp;specific&nbsp;for&nbsp;that&nbsp;player</tt></dd></dl>
+ <dl><dt><a name="-team_table"><strong>team_table</strong></a>()</dt><dd><tt>:return:&nbsp;Team&nbsp;table&nbsp;page</tt></dd></dl>
+ <dl><dt><a name="-team_template"><strong>team_template</strong></a>(t_name)</dt><dd><tt>:param&nbsp;t_name:&nbsp;the&nbsp;team's&nbsp;name<br>
+:return:&nbsp;the&nbsp;team&nbsp;profile&nbsp;page&nbsp;populated&nbsp;with&nbsp;content&nbsp;specific&nbsp;for&nbsp;that&nbsp;team</tt></dd></dl>
+ <dl><dt><a name="-unittest"><strong>unittest</strong></a>()</dt><dd><tt>:return:&nbsp;renders&nbsp;the&nbsp;page&nbsp;that&nbsp;displays&nbsp;the&nbsp;results&nbsp;of&nbsp;the&nbsp;unittests</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>PIPE</strong> = -1<br>
+<strong>STDOUT</strong> = -2<br>
+<strong>punt</strong> = &lt;Flask 'models'&gt;</td></tr></table>
+</body></html>
